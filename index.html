@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model Demonstration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">BoxModel Demo</h1>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Understanding the CSS Box Model</h2>
+                <p>Learn how margin, padding, and borders work together to create beautiful layouts</p>
+                <button class="cta-button">Get Started</button>
+            </div>
+        </section>
+
+        <!-- Cards Section -->
+        <section id="about" class="cards-section">
+            <h2>Box Model Components</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <h3>Margin</h3>
+                    <p>The outer space around an element, creating separation from other elements.</p>
+                    <div class="box-demo margin-demo">
+                        <div class="content">Content</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Border</h3>
+                    <p>The edge surrounding the padding and content of an element.</p>
+                    <div class="box-demo border-demo">
+                        <div class="content">Content</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Padding</h3>
+                    <p>The space between the content and the border of an element.</p>
+                    <div class="box-demo padding-demo">
+                        <div class="content">Content</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section id="services" class="content-section">
+            <h2>Practical Examples</h2>
+            <div class="example-container">
+                <div class="text-content">
+                    <h3>Text Elements</h3>
+                    <p>This paragraph demonstrates how padding and margin affect text spacing. Notice the comfortable reading space created by proper spacing.</p>
+                    <p>Multiple paragraphs show how margin creates natural separation between blocks of text.</p>
+                </div>
+                
+                <div class="button-group">
+                    <button class="btn primary">Primary Button</button>
+                    <button class="btn secondary">Secondary Button</button>
+                    <button class="btn outline">Outline Button</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Box Model Demonstration. All rights reserved.</p>
+    </footer>
+</body>
+</html>
